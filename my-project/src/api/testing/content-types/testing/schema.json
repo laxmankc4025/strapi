@@ -1,0 +1,45 @@
+{
+  "kind": "collectionType",
+  "collectionName": "testings",
+  "info": {
+    "singularName": "testing",
+    "pluralName": "testings",
+    "displayName": "testing",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Header": {
+      "type": "string"
+    },
+    "Date": {
+      "type": "date"
+    },
+    "Number": {
+      "type": "integer"
+    },
+    "Enum": {
+      "type": "enumeration",
+      "enum": [
+        "tech",
+        "react",
+        "node",
+        "ruby on rails"
+      ]
+    },
+    "Comment": {
+      "type": "customField",
+      "customField": "plugin::comments.comments"
+    },
+    "Body": {
+      "type": "customField",
+      "options": {
+        "preset": "toolbar"
+      },
+      "customField": "plugin::ckeditor5.CKEditor"
+    }
+  }
+}
